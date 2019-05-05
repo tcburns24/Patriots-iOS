@@ -13,6 +13,7 @@
 		F19E0616227F43830089C5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19E0615227F43830089C5FA /* Assets.xcassets */; };
 		F19E0619227F43830089C5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19E0617227F43830089C5FA /* LaunchScreen.storyboard */; };
 		F19E0621227F46E20089C5FA /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E0620227F46E20089C5FA /* gradient.swift */; };
+		F19E0623227F4F810089C5FA /* PatsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E0622227F4F810089C5FA /* PatsColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F19E0618227F43830089C5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19E061A227F43830089C5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F19E0620227F46E20089C5FA /* gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradient.swift; sourceTree = "<group>"; };
+		F19E0622227F4F810089C5FA /* PatsColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatsColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				F19E060E227F43830089C5FA /* AppDelegate.swift */,
 				F19E0610227F43830089C5FA /* ViewController.swift */,
+				F19E0622227F4F810089C5FA /* PatsColors.swift */,
 				F19E0612227F43830089C5FA /* Main.storyboard */,
 				F19E0620227F46E20089C5FA /* gradient.swift */,
 				F19E0615227F43830089C5FA /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19E0611227F43830089C5FA /* ViewController.swift in Sources */,
+				F19E0623227F4F810089C5FA /* PatsColors.swift in Sources */,
 				F19E0621227F46E20089C5FA /* gradient.swift in Sources */,
 				F19E060F227F43830089C5FA /* AppDelegate.swift in Sources */,
 			);
