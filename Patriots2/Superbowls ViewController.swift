@@ -9,7 +9,7 @@
 import UIKit
 
 let superBowlData = [
-    "xxxvi": [
+    [
         "vs": "St. Louis Rams",
         "score": "20 – 17",
         "mvp": "Tom Brady",
@@ -18,7 +18,7 @@ let superBowlData = [
         "roman": "XXXVI",
         "image": "sb36"
     ],
-    "xxxviii": [
+    [
         "vs": "Carolina Panthers",
         "score": "32 – 29",
         "mvp": "Tom Brady",
@@ -27,7 +27,7 @@ let superBowlData = [
         "roman": "XXXVIII",
         "image": "sb38"
     ],
-    "xxxix": [
+    [
         "vs": "Philadelphia Eagles",
         "score": "24 – 21",
         "mvp": "Deion Branch",
@@ -36,7 +36,7 @@ let superBowlData = [
         "roman": "XXXIX",
         "image": "sb39"
     ],
-    "xlix": [
+    [
         "vs": "Seattle Seahawks",
         "score": "28 – 24",
         "mvp": "Tom Brady",
@@ -45,7 +45,7 @@ let superBowlData = [
         "roman": "XLIX",
         "image": "sb49"
     ],
-    "li": [
+    [
         "vs": "Atlanta Falcons",
         "score": "34 – 28",
         "mvp": "Tom Brady",
@@ -54,7 +54,7 @@ let superBowlData = [
         "roman": "LI",
         "image": "sb51"
     ],
-    "liii": [
+    [
         "vs": "Los Angeles Rams",
         "score": "13 – 3",
         "mvp": "Julian Edelman",
@@ -65,13 +65,33 @@ let superBowlData = [
     ]
 ]
 
+var sbIndex = 0
+
 class Superbowls_ViewController: UIViewController, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return superBowlData.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let superBowlCell = tableView.dequeueReusableCell(withIdentifier: "superBowlCell", for: indexPath)
+        
+        superBowlCell.textLabel?.text = superBowlData[indexPath.row]["roman"]
+        
+        superBowlCell.detailTextLabel?.text = "\(String(describing: superBowlData[indexPath.row]["season"])) • vs \(String(describing: superBowlData[indexPath.row]["vs"]))"
+        
+        superBowlCell.imageView?.image = UIImage(named: superBowlData[indexPath.row]["image"]!)
+        
+        superBowlCell.accessoryType = .disclosureIndicator
+        
+        return superBowlCell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        sbIndex = indexPath.row
+        performSegue(withIdentifier: "seeSuperbowls", sender: self)
     }
     
 
@@ -81,8 +101,6 @@ class Superbowls_ViewController: UIViewController, UITableViewDataSource {
         view.setGradientBackground(colorOne: PatsColors.patsRed, colorTwo: UIColor(red: 193/255, green: 124/255, blue: 124/255, alpha: 1.0) )
         
         self.title = "Superbowl Victories"
-
-        // Do any additional setup after loading the view.
     }
     
 
