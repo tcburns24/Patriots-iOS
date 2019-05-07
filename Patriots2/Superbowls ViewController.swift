@@ -75,11 +75,12 @@ class Superbowls_ViewController: UIViewController, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let superBowlCell = tableView.dequeueReusableCell(withIdentifier: "superBowlCell", for: indexPath)
         
         superBowlCell.textLabel?.text = superBowlData[indexPath.row]["roman"]
         
-        superBowlCell.detailTextLabel?.text = "\(String(describing: superBowlData[indexPath.row]["season"])) • vs \(String(describing: superBowlData[indexPath.row]["vs"]))"
+        superBowlCell.detailTextLabel?.text = "\(superBowlData[indexPath.row]["season"]!) • vs \(superBowlData[indexPath.row]["vs"]!)"
         
         superBowlCell.imageView?.image = UIImage(named: superBowlData[indexPath.row]["image"]!)
         
