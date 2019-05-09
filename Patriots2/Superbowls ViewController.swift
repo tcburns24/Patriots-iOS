@@ -11,57 +11,69 @@ import UIKit
 let superBowlData = [
     [
         "vs": "St. Louis Rams",
-        "score": "20 – 17",
+        "patsScore": "20",
+        "oppScore": "17",
         "mvp": "Tom Brady",
         "location": "New Orleans, LA",
         "season": "2001",
         "roman": "XXXVI",
-        "image": "sb36"
+        "image": "sb36",
+        "oppImage": "rams"
     ],
     [
         "vs": "Carolina Panthers",
-        "score": "32 – 29",
+        "patsScore": "32",
+        "oppScore": "29",
         "mvp": "Tom Brady",
         "location": "Houston, TX",
         "season": "2003",
         "roman": "XXXVIII",
-        "image": "sb38"
+        "image": "sb38",
+        "oppImage": "panthers"
     ],
     [
         "vs": "Philadelphia Eagles",
-        "score": "24 – 21",
+        "patsScore": "24",
+        "oppScore": "21",
         "mvp": "Deion Branch",
         "location": "Jacksonville, FL",
         "season": "2004",
         "roman": "XXXIX",
-        "image": "sb39"
+        "image": "sb39",
+        "oppImage": "eagles"
     ],
     [
         "vs": "Seattle Seahawks",
-        "score": "28 – 24",
+        "patsScore": "28",
+        "oppScore": "24",
         "mvp": "Tom Brady",
         "location": "Glendale, AZ",
         "season": "2014",
         "roman": "XLIX",
-        "image": "sb49"
+        "image": "sb49",
+        "oppImage": "seahawks"
     ],
     [
         "vs": "Atlanta Falcons",
-        "score": "34 – 28",
+        "patsScore": "34",
+        "oppScore": "28",
         "mvp": "Tom Brady",
         "location": "Houston, TX",
         "season": "2016",
         "roman": "LI",
-        "image": "sb51"
+        "image": "sb51",
+        "oppImage": "falcons"
     ],
     [
         "vs": "Los Angeles Rams",
-        "score": "13 – 3",
+        "patsScore": "13",
+        "oppScore": "3",
         "mvp": "Julian Edelman",
         "location": "Atlanta, GA",
         "season": "2018",
         "roman": "LIII",
-        "image": "sb53"
+        "image": "sb53",
+        "oppImage": "rams"
     ]
 ]
 

@@ -10,12 +10,24 @@ import UIKit
 
 class SingleSBViewController: UIViewController {
     
+    @IBOutlet weak var oppLogo: UIImageView!
+    @IBOutlet weak var patsScore: UILabel!
+    @IBOutlet weak var oppScore: UILabel!
+    @IBOutlet weak var season: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var mvp: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        oppLogo.image = UIImage(named: superBowlData[sbIndex]["image"]!)
+        patsScore.text = superBowlData[sbIndex]["patsScore"]!
+        oppScore.text = superBowlData[sbIndex]["oppScore"]!
+        season.text = superBowlData[sbIndex]["season"]!
+        location.text = superBowlData[sbIndex]["location"]!
+        mvp.text = superBowlData[sbIndex]["mvp"]!
     }
     
 
