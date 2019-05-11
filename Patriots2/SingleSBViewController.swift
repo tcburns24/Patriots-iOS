@@ -17,6 +17,7 @@ class SingleSBViewController: UIViewController {
     @IBOutlet weak var season: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var mvp: UILabel!
+    @IBOutlet weak var sbBG: UIImageView!
     
 
     override func viewDidLoad() {
@@ -30,6 +31,7 @@ class SingleSBViewController: UIViewController {
         season.text = superBowlData[sbIndex]["season"]!
         location.text = superBowlData[sbIndex]["location"]!
         mvp.text = superBowlData[sbIndex]["mvp"]!
+        sbBG.image = UIImage(named: superBowlData[sbIndex]["bgImage"]!)
     }
     
 

@@ -18,7 +18,8 @@ let superBowlData = [
         "season": "2001",
         "roman": "XXXVI",
         "image": "sb36",
-        "oppImage": "rams"
+        "oppImage": "rams",
+        "bgImage": "sbBG36"
     ],
     [
         "vs": "Carolina Panthers",
@@ -29,7 +30,8 @@ let superBowlData = [
         "season": "2003",
         "roman": "XXXVIII",
         "image": "sb38",
-        "oppImage": "panthers"
+        "oppImage": "panthers",
+        "bgImage": "sbBG38"
     ],
     [
         "vs": "Philadelphia Eagles",
@@ -40,7 +42,8 @@ let superBowlData = [
         "season": "2004",
         "roman": "XXXIX",
         "image": "sb39",
-        "oppImage": "eagles"
+        "oppImage": "eagles",
+        "bgImage": "sbBG39"
     ],
     [
         "vs": "Seattle Seahawks",
@@ -51,7 +54,8 @@ let superBowlData = [
         "season": "2014",
         "roman": "XLIX",
         "image": "sb49",
-        "oppImage": "seahawks"
+        "oppImage": "seahawks",
+        "bgImage": "sbBG49"
     ],
     [
         "vs": "Atlanta Falcons",
@@ -62,7 +66,8 @@ let superBowlData = [
         "season": "2016",
         "roman": "LI",
         "image": "sb51",
-        "oppImage": "falcons"
+        "oppImage": "falcons",
+        "bgImage": "sbBG51"
     ],
     [
         "vs": "Los Angeles Rams",
@@ -73,7 +78,8 @@ let superBowlData = [
         "season": "2018",
         "roman": "LIII",
         "image": "sb53",
-        "oppImage": "rams"
+        "oppImage": "rams",
+        "bgImage": "sbBG53"
     ]
 ]
 

@@ -232,6 +232,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6U-hL-x0e">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="jqc-Qm-uzL">
                                 <rect key="frame" x="287" y="601" width="72" height="66"/>
                             </imageView>
@@ -368,6 +372,7 @@
                         <outlet property="oppLogo" destination="Ncq-fO-893" id="Lqm-xi-eru"/>
                         <outlet property="oppScore" destination="Cxk-6I-Mz2" id="S0X-7S-Ysh"/>
                         <outlet property="patsScore" destination="lDd-Iu-U3g" id="pgd-d3-KHo"/>
+                        <outlet property="sbBG" destination="q6U-hL-x0e" id="7hh-SZ-2Zu"/>
                         <outlet property="sbLogo" destination="VPq-Sp-zOx" id="a9y-v7-7JE"/>
                         <outlet property="season" destination="7mM-Es-3Do" id="VyM-Xq-a6t"/>
                     </connections>
