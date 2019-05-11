@@ -79,7 +79,9 @@ let superBowlData = [
 
 var sbIndex = 0
 
-class Superbowls_ViewController: UIViewController, UITableViewDataSource {
+class Superbowls_ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var superBowlsTableController: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return superBowlData.count
@@ -105,11 +107,15 @@ class Superbowls_ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         sbIndex = indexPath.row
         performSegue(withIdentifier: "seeSuperbowls", sender: self)
+        print("didSelectRowAt(): myIndex = \(sbIndex)")
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        superBowlsTableController.delegate = self
+        superBowlsTableController.dataSource = self
         
         view.setGradientBackground(colorOne: PatsColors.patsRed, colorTwo: UIColor(red: 193/255, green: 124/255, blue: 124/255, alpha: 1.0) )
         
