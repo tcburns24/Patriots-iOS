@@ -20,7 +20,7 @@ let superBowlData = [
         "image": "sb36",
         "oppImage": "rams",
         "bgImage": "sbBG36",
-        "youtube": "_8c3Z4nZwtE"
+        "youtube": "https://www.youtube.com/watch?v=_8c3Z4nZwtE"
     ],
     [
         "vs": "Carolina Panthers",
@@ -33,7 +33,7 @@ let superBowlData = [
         "image": "sb38",
         "oppImage": "panthers",
         "bgImage": "sbBG38",
-        "youtube": "xK_2j0CDNFo"
+        "youtube": "https://www.youtube.com/watch?v=xK_2j0CDNFo"
     ],
     [
         "vs": "Philadelphia Eagles",
@@ -46,7 +46,7 @@ let superBowlData = [
         "image": "sb39",
         "oppImage": "eagles",
         "bgImage": "sbBG39",
-        "youtube": "AOn4CLCFipo3jcZaiUpm75msw4k5Y6rW4w"
+        "youtube": "https://www.youtube.com/watch?v=Zvg6b6q1s-Y"
     ],
     [
         "vs": "Seattle Seahawks",
@@ -59,7 +59,7 @@ let superBowlData = [
         "image": "sb49",
         "oppImage": "seahawks",
         "bgImage": "sbBG49",
-        "youtube": "AOn4CLCy0tKlvxYBXzPxPG7fPChxwtrg4w"
+        "youtube": "https://www.youtube.com/watch?v=DKvXgZWfn14"
     ],
     [
         "vs": "Atlanta Falcons",
@@ -72,7 +72,7 @@ let superBowlData = [
         "image": "sb51",
         "oppImage": "falcons",
         "bgImage": "sbBG51",
-        "youtube": "gY8exXZgyqc"
+        "youtube": "https://www.youtube.com/watch?v=016LXFHpFCk"
     ],
     [
         "vs": "Los Angeles Rams",
@@ -85,7 +85,7 @@ let superBowlData = [
         "image": "sb53",
         "oppImage": "rams",
         "bgImage": "sbBG53",
-        "youtube": "usw9WiShXEs"
+        "youtube": "https://www.youtube.com/watch?v=usw9WiShXEs"
     ]
 ]
 

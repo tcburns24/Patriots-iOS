@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class SingleSBViewController: UIViewController {
     
@@ -18,8 +19,7 @@ class SingleSBViewController: UIViewController {
     @IBOutlet weak var mvp: UILabel!
     @IBOutlet weak var sbBG: UIImageView!
     
-    
-    @IBOutlet weak var youtubeVid: UIWebView!
+    @IBOutlet weak var youtubeVid: WKWebView!
     
 
     override func viewDidLoad() {
@@ -39,8 +39,8 @@ class SingleSBViewController: UIViewController {
     }
     
     func getVideoCode(videoCode: String) {
-        let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
-        youtubeVid.loadRequest(URLRequest(url: url!))
+        let url = URL(string: videoCode)
+        youtubeVid.load(URLRequest(url: url!))
     }
     
 

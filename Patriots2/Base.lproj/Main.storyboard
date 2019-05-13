@@ -156,7 +156,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="A2x-Hk-EUD">
-                                <rect key="frame" x="72" y="-26" width="231" height="200"/>
+                                <rect key="frame" x="72" y="-26" width="231" height="207"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mP-tT-3X8">
                                 <rect key="frame" x="16" y="621" width="38" height="36"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LJn-cH-vRf">
-                                <rect key="frame" x="0.0" y="223" width="375" height="290"/>
+                                <rect key="frame" x="0.0" y="230" width="375" height="283"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="superBowlCell" textLabel="7m1-JP-4p5" detailTextLabel="FSy-cR-Z6S" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="wKn-gs-MIJ">
@@ -199,14 +199,24 @@
                                     <outlet property="dataSource" destination="efK-Af-1nY" id="Wxh-E3-ZcF"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select a Superbowl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-bP-rAG">
+                                <rect key="frame" x="113" y="153" width="174" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.75991434010152281" green="0.0" blue="0.014226897345014741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z0H-Ym-hYD" firstAttribute="trailing" secondItem="A2x-Hk-EUD" secondAttribute="trailing" constant="72" id="Mfo-iU-glX"/>
                             <constraint firstItem="6mP-tT-3X8" firstAttribute="leading" secondItem="z0H-Ym-hYD" secondAttribute="leading" constant="16" id="Nd0-7A-Nfz"/>
+                            <constraint firstItem="sTK-bP-rAG" firstAttribute="top" secondItem="z0H-Ym-hYD" secondAttribute="top" constant="133" id="R5n-dJ-LTY"/>
                             <constraint firstItem="A2x-Hk-EUD" firstAttribute="leading" secondItem="z0H-Ym-hYD" secondAttribute="leading" constant="72" id="WJV-bW-JSm"/>
+                            <constraint firstItem="z0H-Ym-hYD" firstAttribute="trailing" secondItem="sTK-bP-rAG" secondAttribute="trailing" constant="114" id="YIK-yr-Gk7"/>
                             <constraint firstItem="z0H-Ym-hYD" firstAttribute="bottom" secondItem="6mP-tT-3X8" secondAttribute="bottom" constant="10" id="bNS-em-3ZY"/>
+                            <constraint firstItem="LJn-cH-vRf" firstAttribute="top" secondItem="sTK-bP-rAG" secondAttribute="bottom" constant="49" id="gmt-ns-Prt"/>
                             <constraint firstItem="LJn-cH-vRf" firstAttribute="leading" secondItem="z0H-Ym-hYD" secondAttribute="leading" id="lxV-Pf-zO0"/>
+                            <constraint firstItem="sTK-bP-rAG" firstAttribute="leading" secondItem="z0H-Ym-hYD" secondAttribute="leading" constant="113" id="n5g-PC-nz7"/>
                             <constraint firstItem="LJn-cH-vRf" firstAttribute="top" secondItem="A2x-Hk-EUD" secondAttribute="bottom" constant="49" id="pno-Fa-6fW"/>
                             <constraint firstItem="A2x-Hk-EUD" firstAttribute="top" secondItem="LUS-iT-53A" secondAttribute="top" constant="-26" id="uN7-SQ-y7r"/>
                             <constraint firstItem="LJn-cH-vRf" firstAttribute="trailing" secondItem="z0H-Ym-hYD" secondAttribute="trailing" id="wNL-9z-UdZ"/>
@@ -321,23 +331,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFC-fO-k0n">
-                                <rect key="frame" x="16" y="410" width="343" height="175"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUh-BV-Wix">
+                                <rect key="frame" x="16" y="382" width="343" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jqc-Qm-uzL" firstAttribute="bottom" secondItem="pZU-BY-GOC" secondAttribute="bottom" id="1NC-oM-oiE"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="trailing" secondItem="pZU-BY-GOC" secondAttribute="trailing" id="1eJ-DB-ux9"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="jqc-Qm-uzL" secondAttribute="trailing" constant="16" id="4lt-Qs-dGY"/>
-                            <constraint firstItem="jqc-Qm-uzL" firstAttribute="top" secondItem="JFC-fO-k0n" secondAttribute="bottom" constant="14" id="5eA-qD-Dwk"/>
                             <constraint firstItem="jqc-Qm-uzL" firstAttribute="top" secondItem="Ncq-fO-893" secondAttribute="bottom" constant="352" id="5mR-dq-dkt"/>
                             <constraint firstItem="W00-Fc-LgU" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="11" id="9iT-Ea-vjp"/>
                             <constraint firstItem="VPq-Sp-zOx" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="112" id="9vo-iy-KFh"/>
                             <constraint firstItem="s2Q-Uo-J6j" firstAttribute="top" secondItem="pZU-BY-GOC" secondAttribute="top" constant="167" id="AT2-bu-J9p"/>
-                            <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="JFC-fO-k0n" secondAttribute="trailing" constant="16" id="Aku-hP-mVo"/>
-                            <constraint firstItem="JFC-fO-k0n" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="16" id="CgY-OL-ZQZ"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="top" secondItem="pZU-BY-GOC" secondAttribute="top" id="EGu-Zx-ikl"/>
                             <constraint firstItem="jqc-Qm-uzL" firstAttribute="bottom" secondItem="pZU-BY-GOC" secondAttribute="bottom" id="Fxg-7Y-9Z0"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="bottom" secondItem="pZU-BY-GOC" secondAttribute="bottom" id="GGL-ZC-nOR"/>
@@ -351,7 +363,6 @@
                             <constraint firstItem="s2Q-Uo-J6j" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="11" id="YwP-QY-Ogg"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="jqc-Qm-uzL" secondAttribute="trailing" constant="16" id="ZYI-cF-Bz7"/>
                             <constraint firstItem="nkA-aZ-ieB" firstAttribute="centerY" secondItem="OFZ-KH-sSK" secondAttribute="centerY" id="c5D-XX-5Me"/>
-                            <constraint firstItem="JFC-fO-k0n" firstAttribute="top" secondItem="nkA-aZ-ieB" secondAttribute="bottom" constant="36" id="rVG-rJ-wmN"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="bottom" secondItem="W00-Fc-LgU" secondAttribute="bottom" constant="20" id="sUm-kg-Nn3"/>
                             <constraint firstItem="nkA-aZ-ieB" firstAttribute="top" secondItem="Ncq-fO-893" secondAttribute="bottom" constant="46" id="xCs-tN-Mn1"/>
                             <constraint firstItem="VPq-Sp-zOx" firstAttribute="centerX" secondItem="hyO-D3-vng" secondAttribute="centerX" id="xhJ-n3-A9f"/>
@@ -368,7 +379,7 @@
                         <outlet property="sbBG" destination="q6U-hL-x0e" id="7hh-SZ-2Zu"/>
                         <outlet property="sbLogo" destination="VPq-Sp-zOx" id="a9y-v7-7JE"/>
                         <outlet property="season" destination="7mM-Es-3Do" id="VyM-Xq-a6t"/>
-                        <outlet property="youtubeVid" destination="JFC-fO-k0n" id="uUy-09-yaB"/>
+                        <outlet property="youtubeVid" destination="mUh-BV-Wix" id="AIe-KU-fnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3d-MB-N6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
