@@ -19,7 +19,8 @@ let superBowlData = [
         "roman": "XXXVI",
         "image": "sb36",
         "oppImage": "rams",
-        "bgImage": "sbBG36"
+        "bgImage": "sbBG36",
+        "youtube": "_8c3Z4nZwtE"
     ],
     [
         "vs": "Carolina Panthers",
@@ -31,7 +32,8 @@ let superBowlData = [
         "roman": "XXXVIII",
         "image": "sb38",
         "oppImage": "panthers",
-        "bgImage": "sbBG38"
+        "bgImage": "sbBG38",
+        "youtube": "xK_2j0CDNFo"
     ],
     [
         "vs": "Philadelphia Eagles",
@@ -43,7 +45,8 @@ let superBowlData = [
         "roman": "XXXIX",
         "image": "sb39",
         "oppImage": "eagles",
-        "bgImage": "sbBG39"
+        "bgImage": "sbBG39",
+        "youtube": "AOn4CLCFipo3jcZaiUpm75msw4k5Y6rW4w"
     ],
     [
         "vs": "Seattle Seahawks",
@@ -55,7 +58,8 @@ let superBowlData = [
         "roman": "XLIX",
         "image": "sb49",
         "oppImage": "seahawks",
-        "bgImage": "sbBG49"
+        "bgImage": "sbBG49",
+        "youtube": "AOn4CLCy0tKlvxYBXzPxPG7fPChxwtrg4w"
     ],
     [
         "vs": "Atlanta Falcons",
@@ -67,7 +71,8 @@ let superBowlData = [
         "roman": "LI",
         "image": "sb51",
         "oppImage": "falcons",
-        "bgImage": "sbBG51"
+        "bgImage": "sbBG51",
+        "youtube": "gY8exXZgyqc"
     ],
     [
         "vs": "Los Angeles Rams",
@@ -79,7 +84,8 @@ let superBowlData = [
         "roman": "LIII",
         "image": "sb53",
         "oppImage": "rams",
-        "bgImage": "sbBG53"
+        "bgImage": "sbBG53",
+        "youtube": "usw9WiShXEs"
     ]
 ]
 
@@ -113,7 +119,6 @@ class Superbowls_ViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         sbIndex = indexPath.row
         performSegue(withIdentifier: "seeSuperbowls", sender: self)
-        print("didSelectRowAt(): myIndex = \(sbIndex)")
     }
     
 

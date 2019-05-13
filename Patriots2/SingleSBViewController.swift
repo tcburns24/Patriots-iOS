@@ -12,12 +12,14 @@ class SingleSBViewController: UIViewController {
     
     @IBOutlet weak var sbLogo: UIImageView!
     @IBOutlet weak var oppLogo: UIImageView!
-    @IBOutlet weak var oppScore: UILabel!
-    @IBOutlet weak var patsScore: UILabel!
     @IBOutlet weak var season: UILabel!
+    @IBOutlet weak var finalSCore: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var mvp: UILabel!
     @IBOutlet weak var sbBG: UIImageView!
+    
+    
+    @IBOutlet weak var youtubeVid: UIWebView!
     
 
     override func viewDidLoad() {
@@ -26,12 +28,19 @@ class SingleSBViewController: UIViewController {
         // Do any additional setup after loading the view.
         sbLogo.image = UIImage(named: superBowlData[sbIndex]["image"]!)
         oppLogo.image = UIImage(named: superBowlData[sbIndex]["oppImage"]!)
-        patsScore.text = superBowlData[sbIndex]["patsScore"]!
-        oppScore.text = superBowlData[sbIndex]["oppScore"]!
+        finalSCore.text = "\(superBowlData[sbIndex]["patsScore"]!) — \(superBowlData[sbIndex]["oppScore"]!)"
         season.text = superBowlData[sbIndex]["season"]!
         location.text = superBowlData[sbIndex]["location"]!
         mvp.text = superBowlData[sbIndex]["mvp"]!
         sbBG.image = UIImage(named: superBowlData[sbIndex]["bgImage"]!)
+        sbBG.alpha = 0.23
+        
+        getVideoCode(videoCode: superBowlData[sbIndex]["youtube"]!)
+    }
+    
+    func getVideoCode(videoCode: String) {
+        let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+        youtubeVid.loadRequest(URLRequest(url: url!))
     }
     
 
