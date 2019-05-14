@@ -108,6 +108,8 @@ class Superbowls_ViewController: UIViewController, UITableViewDelegate, UITableV
         
         superBowlCell.detailTextLabel?.text = "\(superBowlData[indexPath.row]["season"]!) • vs \(superBowlData[indexPath.row]["vs"]!)"
         
+        superBowlCell.imageView?.frame = CGRect(x:1, y:1, width:75, height:75)
+        
         superBowlCell.imageView?.image = UIImage(named: superBowlData[indexPath.row]["image"]!)
         
         superBowlCell.accessoryType = .disclosureIndicator
