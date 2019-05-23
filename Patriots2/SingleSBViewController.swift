@@ -12,9 +12,9 @@ import WebKit
 class SingleSBViewController: UIViewController {
     
     @IBOutlet weak var sbLogo: UIImageView!
-    @IBOutlet weak var oppLogo: UIImageView!
+    @IBOutlet weak var finalScore: UILabel!
     @IBOutlet weak var season: UILabel!
-    @IBOutlet weak var finalSCore: UILabel!
+    @IBOutlet weak var oppLogo: UIImageView!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var mvp: UILabel!
     @IBOutlet weak var sbBG: UIImageView!
@@ -28,7 +28,7 @@ class SingleSBViewController: UIViewController {
         // Do any additional setup after loading the view.
         sbLogo.image = UIImage(named: superBowlData[sbIndex]["image"]!)
         oppLogo.image = UIImage(named: superBowlData[sbIndex]["oppImage"]!)
-        finalSCore.text = "\(superBowlData[sbIndex]["patsScore"]!) — \(superBowlData[sbIndex]["oppScore"]!)"
+        finalScore.text = "\(superBowlData[sbIndex]["patsScore"]!)  –  \(superBowlData[sbIndex]["oppScore"]!)"
         season.text = superBowlData[sbIndex]["season"]!
         location.text = superBowlData[sbIndex]["location"]!
         mvp.text = superBowlData[sbIndex]["mvp"]!

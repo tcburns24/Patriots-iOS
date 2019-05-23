@@ -263,66 +263,6 @@
                                     <constraint firstAttribute="height" constant="50" id="Wod-Kz-e43"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-Uo-J6j">
-                                <rect key="frame" x="16" y="160" width="111" height="99"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyO-D3-vng">
-                                <rect key="frame" x="162.5" y="188" width="50.5" height="24.5"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-r6-uE9" userLabel="Main Stack">
-                                <rect key="frame" x="0.0" y="264" width="375" height="86"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-U8-zKs" userLabel="Category Stack">
-                                        <rect key="frame" x="0.0" y="2" width="187.5" height="82.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Season: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-sf-xJe">
-                                                <rect key="frame" x="112" y="0.0" width="75.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-db-3xR">
-                                                <rect key="frame" x="100" y="27.5" width="87.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVP: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqo-rj-jRA">
-                                                <rect key="frame" x="134.5" y="55" width="53" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="wey-Vv-o0S" userLabel="Info Stack">
-                                        <rect key="frame" x="187.5" y="2" width="187.5" height="82.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-d6-tsa">
-                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-ZP-B1g">
-                                                <rect key="frame" x="0.0" y="27.5" width="50.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mM-Es-3Do">
-                                                <rect key="frame" x="0.0" y="55" width="50.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUh-BV-Wix">
                                 <rect key="frame" x="40" y="405" width="295" height="149"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -334,12 +274,76 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ncq-fO-893">
-                                <rect key="frame" x="269" y="167" width="90" height="84"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-r6-uE9" userLabel="Main Stack">
+                                <rect key="frame" x="16" y="306" width="343" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-U8-zKs" userLabel="Category Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.5" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Season: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqH-sf-xJe">
+                                                <rect key="frame" x="99" y="0.0" width="71.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-db-3xR">
+                                                <rect key="frame" x="87" y="25.5" width="83.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVP: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqo-rj-jRA">
+                                                <rect key="frame" x="120.5" y="50.5" width="50" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wey-Vv-o0S" userLabel="Info Stack">
+                                        <rect key="frame" x="172.5" y="0.0" width="170.5" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mM-Es-3Do">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-ZP-B1g">
+                                                <rect key="frame" x="0.0" y="25.5" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-d6-tsa">
+                                                <rect key="frame" x="0.0" y="50.5" width="48" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lG9-E9-2cJ">
+                                <rect key="frame" x="16" y="168" width="90" height="85"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="N2O-Ig-0gz"/>
+                                    <constraint firstAttribute="width" constant="90" id="CsS-Rb-Vvw"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pAr-Mz-XzK">
+                                <rect key="frame" x="269" y="175" width="90" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="RCJ-ST-ZKv"/>
+                                    <constraint firstAttribute="height" constant="85" id="gQR-e9-dVb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="104-FJ-q9s">
+                                <rect key="frame" x="112" y="200" width="151" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -347,43 +351,39 @@
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="trailing" secondItem="pZU-BY-GOC" secondAttribute="trailing" id="1eJ-DB-ux9"/>
                             <constraint firstItem="mUh-BV-Wix" firstAttribute="centerX" secondItem="VPq-Sp-zOx" secondAttribute="centerX" id="3U6-Sn-3jL"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="jqc-Qm-uzL" secondAttribute="trailing" constant="16" id="4lt-Qs-dGY"/>
+                            <constraint firstItem="pAr-Mz-XzK" firstAttribute="centerY" secondItem="104-FJ-q9s" secondAttribute="centerY" id="7Gd-DO-ay2"/>
                             <constraint firstItem="W00-Fc-LgU" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="11" id="9iT-Ea-vjp"/>
                             <constraint firstItem="VPq-Sp-zOx" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="112" id="9vo-iy-KFh"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="top" secondItem="pZU-BY-GOC" secondAttribute="top" id="EGu-Zx-ikl"/>
                             <constraint firstItem="jqc-Qm-uzL" firstAttribute="bottom" secondItem="pZU-BY-GOC" secondAttribute="bottom" id="Fxg-7Y-9Z0"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="bottom" secondItem="pZU-BY-GOC" secondAttribute="bottom" id="GGL-ZC-nOR"/>
-                            <constraint firstItem="Cah-r6-uE9" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" id="Kc3-4L-cpi"/>
+                            <constraint firstItem="pAr-Mz-XzK" firstAttribute="top" secondItem="pZU-BY-GOC" secondAttribute="top" constant="155" id="JBs-1E-Ol6"/>
+                            <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="Cah-r6-uE9" secondAttribute="trailing" constant="16" id="ME8-De-CUD"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="VPq-Sp-zOx" secondAttribute="trailing" constant="112" id="OB7-hg-iZD"/>
-                            <constraint firstItem="hyO-D3-vng" firstAttribute="top" secondItem="VPq-Sp-zOx" secondAttribute="bottom" constant="29" id="ONK-G3-c7s"/>
+                            <constraint firstItem="mUh-BV-Wix" firstAttribute="top" secondItem="Cah-r6-uE9" secondAttribute="bottom" constant="24" id="OZZ-1o-7yC"/>
+                            <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="pAr-Mz-XzK" secondAttribute="trailing" constant="16" id="Q6V-08-gLv"/>
+                            <constraint firstItem="pAr-Mz-XzK" firstAttribute="leading" secondItem="104-FJ-q9s" secondAttribute="trailing" constant="6" id="QJP-Jp-Z8j"/>
                             <constraint firstAttribute="bottom" secondItem="mUh-BV-Wix" secondAttribute="bottom" constant="113" id="Rm9-ec-cFF"/>
-                            <constraint firstItem="Ncq-fO-893" firstAttribute="leading" secondItem="hyO-D3-vng" secondAttribute="trailing" constant="55" id="Vva-rf-xGa"/>
-                            <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="Cah-r6-uE9" secondAttribute="trailing" id="W4y-RA-f67"/>
                             <constraint firstItem="VPq-Sp-zOx" firstAttribute="top" secondItem="pZU-BY-GOC" secondAttribute="top" constant="6" id="WSI-UG-8yX"/>
-                            <constraint firstItem="Cah-r6-uE9" firstAttribute="top" secondItem="hyO-D3-vng" secondAttribute="bottom" constant="51.5" id="WuY-Lg-CXE"/>
                             <constraint firstItem="q6U-hL-x0e" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" id="Xmu-5y-4KC"/>
-                            <constraint firstItem="s2Q-Uo-J6j" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="16" id="YwP-QY-Ogg"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="jqc-Qm-uzL" secondAttribute="trailing" constant="16" id="ZYI-cF-Bz7"/>
-                            <constraint firstItem="Ncq-fO-893" firstAttribute="top" secondItem="VPq-Sp-zOx" secondAttribute="bottom" constant="8" id="dg7-zC-n00"/>
-                            <constraint firstItem="mUh-BV-Wix" firstAttribute="top" secondItem="s2Q-Uo-J6j" secondAttribute="bottom" constant="146" id="fet-HN-gQd"/>
-                            <constraint firstItem="hyO-D3-vng" firstAttribute="leading" secondItem="s2Q-Uo-J6j" secondAttribute="trailing" constant="35.5" id="gCc-sE-Wed"/>
-                            <constraint firstItem="pZU-BY-GOC" firstAttribute="trailing" secondItem="Ncq-fO-893" secondAttribute="trailing" constant="17" id="gOW-M7-oSZ"/>
-                            <constraint firstItem="Cah-r6-uE9" firstAttribute="top" secondItem="s2Q-Uo-J6j" secondAttribute="bottom" constant="5" id="i7F-UZ-I2X"/>
-                            <constraint firstItem="s2Q-Uo-J6j" firstAttribute="top" secondItem="VPq-Sp-zOx" secondAttribute="bottom" constant="1" id="iYz-u1-ZbG"/>
-                            <constraint firstItem="s2Q-Uo-J6j" firstAttribute="top" secondItem="VPq-Sp-zOx" secondAttribute="bottom" constant="1" id="oef-q6-1TD"/>
-                            <constraint firstItem="s2Q-Uo-J6j" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="16" id="q4P-uv-p2c"/>
-                            <constraint firstItem="mUh-BV-Wix" firstAttribute="top" secondItem="Cah-r6-uE9" secondAttribute="bottom" constant="55" id="qVh-ir-RV8"/>
+                            <constraint firstItem="Cah-r6-uE9" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="16" id="d8p-Lv-dpp"/>
+                            <constraint firstItem="Cah-r6-uE9" firstAttribute="top" secondItem="pAr-Mz-XzK" secondAttribute="bottom" constant="46" id="eoU-g2-PnH"/>
+                            <constraint firstItem="pAr-Mz-XzK" firstAttribute="top" secondItem="lG9-E9-2cJ" secondAttribute="top" id="n4X-NP-oWs"/>
+                            <constraint firstItem="pAr-Mz-XzK" firstAttribute="bottom" secondItem="lG9-E9-2cJ" secondAttribute="bottom" id="rZo-zD-y08"/>
                             <constraint firstItem="pZU-BY-GOC" firstAttribute="bottom" secondItem="W00-Fc-LgU" secondAttribute="bottom" constant="20" id="sUm-kg-Nn3"/>
+                            <constraint firstItem="104-FJ-q9s" firstAttribute="leading" secondItem="lG9-E9-2cJ" secondAttribute="trailing" constant="6" id="tbk-eV-bjd"/>
                             <constraint firstItem="mUh-BV-Wix" firstAttribute="leading" secondItem="pZU-BY-GOC" secondAttribute="leading" constant="40" id="wU2-vA-3Yy"/>
-                            <constraint firstItem="VPq-Sp-zOx" firstAttribute="centerX" secondItem="hyO-D3-vng" secondAttribute="centerX" id="xhJ-n3-A9f"/>
                             <constraint firstItem="jqc-Qm-uzL" firstAttribute="leading" secondItem="W00-Fc-LgU" secondAttribute="trailing" constant="255" id="xxM-WP-V61"/>
+                            <constraint firstItem="lG9-E9-2cJ" firstAttribute="leading" secondItem="Cah-r6-uE9" secondAttribute="leading" id="zCv-In-RO2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pZU-BY-GOC"/>
                     </view>
                     <connections>
-                        <outlet property="finalSCore" destination="hyO-D3-vng" id="5Ge-Gc-cia"/>
+                        <outlet property="finalScore" destination="104-FJ-q9s" id="X5A-mK-Mmq"/>
                         <outlet property="location" destination="IN7-ZP-B1g" id="6SD-to-Oxr"/>
                         <outlet property="mvp" destination="Nc3-d6-tsa" id="JbL-nK-a48"/>
-                        <outlet property="oppLogo" destination="Ncq-fO-893" id="Lqm-xi-eru"/>
+                        <outlet property="oppLogo" destination="pAr-Mz-XzK" id="KM0-n6-CTl"/>
                         <outlet property="sbBG" destination="q6U-hL-x0e" id="7hh-SZ-2Zu"/>
                         <outlet property="sbLogo" destination="VPq-Sp-zOx" id="a9y-v7-7JE"/>
                         <outlet property="season" destination="7mM-Es-3Do" id="VyM-Xq-a6t"/>
